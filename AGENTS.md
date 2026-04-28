@@ -162,6 +162,50 @@ If the topic naturally splits (e.g., "肝素" covers UFH + LMWH), produce ONE co
 - ❌ "本指南是最权威的"
 - ✅ "ESC 2023 推荐..."、"在 NSTEMI 患者中..."
 
+### Rule 11 · 指南编号必须真实可验证
+
+引用任何**编号化**指南(NICE NG###、ESC class、IDSA 章节、AHA Class/LOE、中华医学会指南编号)时,**编号必须能在官方网站直接定位到该主题**。
+
+| 写法 | 是否合规 |
+|---|---|
+| `NICE NG191, 2023(成人肺炎)` | ❌ NG191 是 COVID-19 急救指南,不是肺炎 → 编号 hallucination |
+| `NICE NG138 成人 CAP 抗菌处方, 2019` | ✅ 编号 + 主题 + 年份匹配 |
+| `NICE 成人肺炎指南 2019` | ✅ 不强求编号,机构 + 主题 + 年份够清晰也可 |
+| `NICE Pneumonia 2023` | ⚠️ 缺少版本号,如不确定具体编号,**宁可只写机构 + 年份** |
+
+**官方核验地址(写指南前应该检查的)**:
+- NICE: https://www.nice.org.uk/guidance/{编号}
+- ESC: https://www.escardio.org/Guidelines
+- AHA: https://professional.heart.org/en/guidelines-and-statements
+- IDSA: https://www.idsociety.org/practice-guideline/
+- WHO: https://www.who.int/publications/guidelines
+- 中华医学会: https://www.cma.org.cn/(各专科分会子站)
+
+**最高准则**:**对编号有任何不确定 → 不写编号,只写机构 + 主题 + 年份。** 编号写错比不写编号更危险——它会让读者误以为有权威支持。
+
+### Rule 12 · 中国医疗场景须并列国内指南
+
+涉及临床决策(诊断、治疗、用药、流程)的内容,引用应同时包含:
+- 至少 1 条**国际指南**(ESC / AHA / NICE / IDSA / WHO / GINA / KDIGO 等)
+- 至少 1 条**中国指南**(中华医学会专科分会、卫健委、国家级专家共识)
+
+中国指南来源举例(非穷举):
+- 心血管:中华心血管病学会 / 中国心脏病学会指南
+- 呼吸:中华医学会呼吸病学分会(CAP / COPD / 哮喘指南)
+- 急诊:中华医学会急诊医学分会(脓毒症 / 心肺复苏指南)
+- 感染:中华医学会感染病学分会(乙肝 / 抗菌药物等)
+- 肿瘤:CSCO 各瘤种诊疗指南
+- 内分泌:中华医学会糖尿病学分会
+- 神经:中国卒中学会 / 中华医学会神经病学分会
+
+**写中国指南时**:同样适用 Rule 11 — 不确定具体名称就只写"中华医学会 + 主题 + 年份"。
+
+**缺中国指南可接受的情况**:
+- 该主题国内尚无明确指南(罕见病、新兴技术)
+- 该主题国内外完全一致(如 BLS 流程)
+
+**缺中国指南必须**:在文件末"引用来源"区注明 `<!-- 待中国指南补充 -->`,而不是当作"已查证"。
+
 ---
 
 ## 3. Output Format Spec
@@ -315,6 +359,12 @@ Before submitting output, run through this checklist. **If any unchecked, fix an
 - [ ] 0 个 PHI(姓名 / 床号 / 具体日期 + 患者描述)
 - [ ] 0 个第一人称临床建议
 - [ ] 0 个 weasel word(通常 / 一般 / 大多数,除非有具体百分比)
+
+### 引用真实性检查(Rule 11 + 12)
+- [ ] 所有"NICE NG###" / "ESC ###" / "AHA ###" 等编号化引用都已对官方网站校验,或已改为"机构 + 主题 + 年份"(无编号)
+- [ ] 临床决策性内容至少有 1 条国际指南 + 1 条中国指南
+- [ ] 缺中国指南的内容已在引用区标注 `<!-- 待中国指南补充 -->`
+- [ ] 所有引用的年份 ≤ 5 年,或 YAML status 标 `needs-update`
 
 ### 完整性检查
 - [ ] YAML frontmatter 包含所有 required 字段
@@ -652,6 +702,7 @@ CHA2DS2-VASc:
 | 版本 | 日期 | 变更 |
 |---|---|---|
 | 1.0 | 2026-04-28 | 初版:10 条 Hard Rules + 4 类模板 + Self-verify checklist |
+| 1.1 | 2026-04-28 | 加 Rule 11(指南编号必须真实可验证)+ Rule 12(中国医疗场景须并列国内指南);Self-verify 新增"引用真实性检查"。触发原因:Codex 生成的发热笔记中 NICE NG191 被错误引用为肺炎指南(实际为 COVID-19 急救指南)。 |
 
 如需修改本规范,需 PR + Issue 讨论。Hard Rules 改动须由仓库主作者确认。
 
