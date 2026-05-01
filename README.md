@@ -51,6 +51,8 @@ Medicla_note/
 ├── _templates/            ← 5 个统一模板(疾病/症状/药物/评分/日记)
 ├── _index-by-symptom.md   ← 症状索引(临床实战入口)
 ├── _index-by-system.md    ← 系统索引(复习入口)
+├── 临床实习毕业能力总纲.md ← 毕业前安全胜任力地图
+├── 临床笔记生成清单.md     ← 待补全主题 backlog
 ├── _red-flags.md          ← 红旗速查(自动 Dataview)
 ├── _must-call-senior.md   ← 升级速查(含 SBAR 模板)
 ├── _to-review.md          ← 待复习清单(自动 Dataview)
@@ -84,7 +86,7 @@ system: 心血管
 severity: 危急             # 危急 | 紧急 | 普通
 must_call_senior: true
 tags: [chest-pain, must-not-miss]
-related_drugs: ["[[阿司匹林]]", "[[肝素]]"]
+related_drugs: ["[[drugs/阿司匹林|阿司匹林]]", "[[drugs/肝素|肝素]]"]
 related_scores: ["[[GRACE]]"]
 created: 2026-04-27
 last_reviewed: 2026-04-27
@@ -118,7 +120,7 @@ status: published          # draft | published | needs-update
 
 ### B. 值班学习(每天)
 1. 在 `daily/` 写当天值班日记(本地专用)
-2. 引用相关疾病:`[[急性冠脉综合征]]`
+2. 引用相关疾病:`[[diseases/急性冠脉综合征|急性冠脉综合征]]`
 3. 反向链接自动出现在疾病页底部 → 长期沉淀真实病例
 
 ### C. 周复习

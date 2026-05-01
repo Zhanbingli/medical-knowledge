@@ -2,7 +2,7 @@
 name: HEART 评分
 aliases: [HEART score, HEART pathway]
 type: score
-applies_to: ["[[胸痛]]", "[[急性冠脉综合征]]"]
+applies_to: ["[[symptoms/胸痛|胸痛]]", "[[diseases/急性冠脉综合征|急性冠脉综合征]]"]
 purpose: 急诊室胸痛 6 周主要不良心脏事件(MACE)风险分层
 created: 2026-04-28
 last_reviewed: 2026-04-28
@@ -94,7 +94,7 @@ status: published
 
 ## 相关链接
 
-- 主要应用:[[胸痛]] · [[急性冠脉综合征]]
+- 主要应用:[[symptoms/胸痛|胸痛]] · [[diseases/急性冠脉综合征|急性冠脉综合征]]
 - 互补评分:[[GRACE]](NSTEMI 收入后)· [[TIMI]] · [[CRUSADE]](出血风险)
 - 检验:[[高敏肌钙蛋白]]
-- 鉴别(HEART 不覆盖):[[主动脉夹层]] · [[肺栓塞]] · [[气胸]]
+- 鉴别(HEART 不覆盖):[[emergencies/主动脉夹层|主动脉夹层]] · [[emergencies/肺栓塞|肺栓塞]] · [[气胸]]

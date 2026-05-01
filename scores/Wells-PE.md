@@ -2,7 +2,7 @@
 name: Wells PE 评分
 aliases: [Wells score for PE, Wells PE]
 type: score
-applies_to: ["[[肺栓塞]]", "[[胸痛]]", "[[气短]]"]
+applies_to: ["[[emergencies/肺栓塞|肺栓塞]]", "[[symptoms/胸痛|胸痛]]", "[[symptoms/气短|气短]]"]
 purpose: 急诊 / 门诊疑似肺栓塞病人的临床预测概率分层,指导 D-dimer 与 CTPA 决策
 created: 2026-04-29
 last_reviewed: 2026-04-29
@@ -63,9 +63,9 @@ status: draft
 
 ## 临床应用场景
 
-1. **急诊室胸痛 / 气短分诊**:配合 [[HEART]](心源性)、Wells DVT、PERC 一起用
+1. **急诊室胸痛 / 气短分诊**:配合 [[scores/HEART|HEART]](心源性)、Wells DVT、PERC 一起用
 2. **术后 / 制动后突发气短**
-3. **怀疑 [[肺栓塞]] 但 CTPA 资源有限时**:Wells 分层避免不必要的 CTPA
+3. **怀疑 [[emergencies/肺栓塞|肺栓塞]] 但 CTPA 资源有限时**:Wells 分层避免不必要的 CTPA
 4. **门诊 D-dimer 决策**:低度怀疑 + D-dimer 阴性 + Wells 低分 → 安全排除
 
 ---
@@ -116,7 +116,7 @@ status: draft
 
 ## 相关链接
 
-- 主要应用:[[肺栓塞]] · [[胸痛]] · [[气短]]
+- 主要应用:[[emergencies/肺栓塞|肺栓塞]] · [[symptoms/胸痛|胸痛]] · [[symptoms/气短|气短]]
 - 互补评分:[[Geneva]] · [[PERC]] · [[YEARS]]
 - 后续分层:[[sPESI]] · [[PESI]]
 - 检验:[[D-dimer]]

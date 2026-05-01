@@ -2,7 +2,7 @@
 name: qSOFA
 aliases: [quick SOFA, qSOFA score]
 type: score
-applies_to: ["[[脓毒症]]", "[[发热]]", "[[意识改变]]"]
+applies_to: ["[[emergencies/脓毒症|脓毒症]]", "[[symptoms/发热|发热]]", "[[symptoms/意识改变|意识改变]]"]
 purpose: 急诊 / 病房床旁筛查疑似感染病人脓毒症 / 不良结局风险
 created: 2026-04-29
 last_reviewed: 2026-04-29
@@ -98,7 +98,7 @@ status: draft
 
 ## 相关链接
 
-- 主要应用:[[脓毒症]] · [[发热]] · [[意识改变]] · [[气短]]
+- 主要应用:[[emergencies/脓毒症|脓毒症]] · [[symptoms/发热|发热]] · [[symptoms/意识改变|意识改变]] · [[symptoms/气短|气短]]
 - 互补评分:[[SOFA]] · [[NEWS2]] · [[MEWS]] · [[APACHE II]]
 - 检验代理:[[乳酸]]
 - 病因相关:[[肺炎]] · [[尿路感染]] · [[腹腔感染]] · [[脑膜炎]]
